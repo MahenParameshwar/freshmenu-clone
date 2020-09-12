@@ -164,3 +164,110 @@ ul{
 .veg-toogle:hover, .filter-icon:hover{
     cursor: pointer;
 }
+
+.food-section{
+    max-width: 1185px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin:0 auto;
+}
+
+.menu{
+    width: 100%;
+    
+}
+
+.left-menu-links{
+    width:24%;
+    
+}
+
+.right-menu-items{
+    flex:1;
+}
+
+.left-menu-links ul{
+    margin:10px 0 0 12px;
+    padding:0;
+}
+
+.left-menu-links li{
+    margin-bottom: 24px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.left-menu-links > ul > li:hover {
+    transform: scale(1.2,1.2);
+    transform-origin:left center;
+}
+
+.left-menu-links > ul > li > a{
+    color:rgb(83, 83, 83);
+}
+
+.left-menu-links > ul > li > a:hover{
+    border-bottom: 2px solid #e85826;
+}
+
+.menu-heading{
+    font-size:30px;
+    font-weight: bolder;
+}
+
+.item-container{
+    margin-top:20px
+}
+
+.item{
+    width:32%;
+    margin-bottom: 8%;
+    margin-left:12px
+}
+
+.item > img[alt="item-img"]{
+    width: 100%;
+    margin:7px auto 10px;
+    border-radius: 10px;
+}
+.item-name{
+    margin-bottom:10px;
+}
+.item-price-button{
+    width:100%;
+}
+
+.item-name{
+    font-weight: 600;
+}
+
+img[alt="veg-icon"],img[alt="non-veg-icon"]{
+    width:12px;
+    margin-right: 5px;
+    border-radius:2px
+}
+
+.category{
+    font-size: 12px;
+    font-weight: bold;
+    color:#868686;
+}
+
+.item-price-button{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.add-button{
+    height:34px;
+    width: 110px;
+    border-radius:50px;
+    background-image: linear-gradient(to right,#f5914e,#e85826);
+    color:white;
+    font-size:16px;
+    font-weight: 600;
+    border-style:none
+}
+
+
+
