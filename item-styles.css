@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin:0;
+    padding: 0;;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+
+#header{
+    width:100%;
+    background-color: #fff;
+}
+
+.header-container{
+    margin:0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 1185px;
+    height:70px;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.loacation{
+    margin-left:40px;
+    font-size:14px;
+    font-weight: 600;
+}
+.loacation span{
+    color: #e85826;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+    align-items: center;
+}
+
+.links > div {
+    height: 70px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.link-to-freshclub{
+    padding-left: 25px;
+    align-items: center;
+    background-color: #603b6d;
+    width:160px;
+    margin-right:40px;
+    color:white
+}
+
+.link-to-freshclub a{
+    color: white;
+}
+
+.navigation-links ul{
+    width: 160px;
+}
+
+.product{
+    margin:30px auto;
+    padding: right 2%;
+    padding-left: 2%;
+    max-width: 1185px;
+}
+
+.product-left-section{
+    width:50%
+}
+
+.product-right-section{
+    flex:1;
+    padding-left: 50px;
+    padding-top:10px
+}
+
+.product-right-section > div{
+    margin-bottom: 15px;
+}
+
+img[alt="item-img"]{
+    width: 100%;
+}
+
+.social-icons{
+    margin-top: 10px;
+    
+}
+
+.social-icons a{
+    padding-right: 20px;
+}
+
+.social-icons > a > i{
+width: 45px;
+height:25px;
+text-align: center;
+border-radius: 5px;
+padding-top: 6px;
+color: white;
+}
+
+.social-icons a:first-child i{
+    background-color: #2c4271;
+}
+
+.social-icons a:nth-child(2) i{
+    background-color: rgb(94, 167, 211);
+}
+
+
+.social-icons a:nth-child(3) i{
+    background-color: #c13d3a;
+}
+
+
+img[alt="veg-icon"],img[alt="non-veg-icon"]{
+    width:12px;
+    margin-right: 5px;
+    border-radius:2px
+}
+
+.item-category{
+    font-size: 12px;
+    font-weight: bold;
+    color:#868686;
+}
+
+.item-price-button{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-button{
+    height:34px;
+    width: 110px;
+    border-radius:50px;
+    background-image: linear-gradient(to right,#f5914e,#e85826);
+    color:white;
+    font-size:16px;
+    font-weight: 600;
+    border-style:none
+}
+
+.heading{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.item-price-button > div{
+    margin-bottom: 10px;
+}
+
+.item-info > div + div{
+    margin-top:5px;
+    font-size:15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.veg-info{
+    margin-top:30px
+}
+
+.veg-info > div + div{
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ingredients{
+    margin-top: 70px;
+}
+
+.ingredients > div + div{
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+footer{
+    max-width:1185px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin:200px auto 15px;
+}
+
+.footer-1 ul{
+    margin:15px 0 0
+}
+
+.footer-1 ul li{
+    margin:5px 0 0;
+    height:30px;
+    font-size:12px;
+    font-weight: bold;
+    color: #5c6c79;
+}
+
+.footer-1 > div:first-child + div{
+    padding-right: 55px;
+}
+
+
+
+.terms-privacy{
+    padding-top: 40px;
+}
+
+.terms-privacy a + a{
+    padding-left: 5px;
+}
+
+.divider{
+    flex:1
+}
+
+.subscribe{
+    flex:2;
+    margin-top:10px;
+}
+
+.submit-form{
+    position: relative;
+}
+
+.submit-form input{
+    height:40px;
+    border-radius: 5px;
+    border-style: none;
+    padding-left: 20px;
+    width: 100%;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.subscribe form button{
+    
+    position: absolute;
+    height:28px;
+    top:6px;
+    right:-10px
+}
+
+.social{
+    margin-top:100px;
+    margin-bottom: 20px;
+}
+
+.social img[alt="svg"]:nth-child(1){
+    margin-left: 20px;
+}
+
+.social img[alt="google-play"],img[alt="app-store"]{
+    margin-right: 20px;
+}
+
+
+.nav-section{
+    width:100%;
+    height:264px;
+    background-color: #343433;
+}
+
+.nav-section-container{
+    max-width:1185px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin:0 auto;
+    padding-top: 5px;
+}
+
+
+
+.nav-section-container > div:first-child + div{
+    padding-left: 120px;
+}
+
+.nav-section-container > div:first-child + div + div{
+    padding-left: 40px;
+}
+.nav-section-container div h5{
+    color:white;
+    padding-bottom: 10px;
+}
+
+.nav-section-container div > ul > li{
+    font-weight: 400;
+    color:#909090;
+    font-size:14px;
+    padding-bottom:15px ;
+}
+
+@media only screen and (max-width: 720px) {
+    
+    .header-right{
+        display: none;
+    }
+
+    .footer-1{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-1 > div:first-child + div{
+        padding: 0;
+    }
+
+    .terms-privacy{
+        padding-top: 10px;
+    }
+    
+}
+
+
+
