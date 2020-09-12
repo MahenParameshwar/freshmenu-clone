@@ -128,3 +128,39 @@ ul{
     height:auto;
     margin-right:15px;        
 }
+
+.filter-bar{
+    max-width: 1185px;
+    height:60px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin:0 auto;
+}
+
+.filter-bar-container{
+    height:28px;
+    border-bottom:1px solid rgb(173, 172, 172);
+    padding:10px 25px 10px 15px;
+}
+
+.veg-filter-container{
+    flex:1;
+}
+
+.veg-filter{
+    width:140px;
+}
+
+.categories{
+    font-size:19px;
+    font-weight:bolder;
+}
+
+.veg-filter{
+    font-weight: 600;
+    color:grey
+}
+
+.veg-toogle:hover, .filter-icon:hover{
+    cursor: pointer;
+}
