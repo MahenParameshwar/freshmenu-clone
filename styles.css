@@ -115,3 +115,16 @@ ul{
     font-style: 14px;
     font-weight:600
 }
+
+.banner{
+    margin-top:10px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom:40px;
+}
+
+.image-section  img{
+    width: 401px;
+    height:auto;
+    margin-right:15px;        
+}
