@@ -174,12 +174,10 @@ ul{
 
 .menu{
     width: 100%;
-    
 }
 
 .left-menu-links{
     width:24%;
-    
 }
 
 .right-menu-items{
@@ -195,6 +193,7 @@ ul{
     margin-bottom: 24px;
     font-size: 15px;
     font-weight: 600;
+    transition: transform .2s ease;   
 }
 
 .left-menu-links > ul > li:hover {
@@ -204,6 +203,7 @@ ul{
 
 .left-menu-links > ul > li > a{
     color:rgb(83, 83, 83);
+    transition: transform .2s ease;   
 }
 
 .left-menu-links > ul > li > a:hover{
@@ -224,12 +224,23 @@ ul{
     margin-bottom: 8%;
     
 }
-
-.item > img[alt="item-img"]{
-    width: 100%;
-    margin:7px auto 10px;
+.item-img-container{
+    width:100%;
     border-radius: 10px;
+    margin:14px auto 10px;
+    overflow: hidden;
 }
+.item-img-container > img[alt="item-img"]{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform .5s ease;    
+}
+
+.item-img-container > img[alt="item-img"]:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 .item-name{
     margin-bottom:10px;
 }
@@ -346,12 +357,6 @@ footer{
     margin-right: 20px;
 }
 
-
-
-.social {
-    margin-left: 20px;
-    margin-right:5px
-}
 
 .nav-section{
     width:100%;
