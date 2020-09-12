@@ -59,6 +59,11 @@ ul{
     margin:0;
     padding:0;
 }
+
+button:hover{
+    cursor: pointer;
+}
+
 .loacation{
     margin-left:40px;
     font-size:14px;
@@ -172,6 +177,16 @@ img[alt="veg-icon"],img[alt="non-veg-icon"]{
     font-weight: bold;
 }
 
+.item-price-button > .add{
+    position: relative;
+}
+
+.item-price-button > .add > button > span{
+    position: absolute;
+    left: 85px;
+    top:3px;
+}
+
 .add-button{
     height:34px;
     width: 110px;
@@ -182,6 +197,12 @@ img[alt="veg-icon"],img[alt="non-veg-icon"]{
     font-weight: 600;
     border-style:none
 }
+.customisable{
+    width: 110px;
+    font-size: 10px;
+    text-align: center;
+}
+
 
 .heading{
     font-weight: 500;
