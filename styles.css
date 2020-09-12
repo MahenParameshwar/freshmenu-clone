@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    margin:0;
+    padding: 0;;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+#header{
+    width: 100%;
+    height:131px;
+    margin:0 auto;
+}
+
+.header-1,.header-2{
+    border-bottom: 1px solid #ebe8e8;
+    background: #fff;
+}
+
+.header-1-container,.header-2-container{
+    height: 60px;
+    max-width:1185px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.loacation{
+    margin-left:40px;
+    font-size:14px;
+    font-weight: 600;
+}
+.loacation span{
+    color: #e85826;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+    flex:1;
+    align-items: center;
+}
+
+.links > div {
+    height: 60px;
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.link-to-cake,.link-to-app{
+    justify-content: center;
+    align-items: center;
+}
+
+.link-to-cake{
+    background-color: #e85826;
+    width:220px;
+    margin-right:10px
+}
+
+.link-to-cake a{
+    color: #fff;
+}
+
+.link-to-app a:hover{
+    color:#e85826;
+}
+
+.header-2-container{
+    justify-content: flex-end;
+}
+
+.header-2-links{
+    width: 500px;
+    font-style: 14px;
+    font-weight:600
+}
