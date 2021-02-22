@@ -9,356 +9,281 @@
     <script src="https://use.fontawesome.com/b3d37efadf.js"></script>
 </head>
 <body>
-
-    <!--Header Section-->
-    <header id="header">
-        <div class="header-1">
-            <div class="header-1-container flex flex-align-center">
-                <a href=""><img src="https://www.freshmenu.com/images/fm-header-logo.svg" alt=""></a>
-                <div class ="loacation">Deliver to:<span>Koramangala, Bengal...</span><img src="images/down-arrow.svg"></div>
-                <div class="links">
-                    <div class="link-to-cake"><a href="">Looking for Cake Delivery?</a></div>
-                    <div class="link-to-app"><a href="">Download app</a></div>
+    <div id="main-page">
+        <!--Header Section-->
+        <header id="header1">
+            <div class="header-1">
+                <div class="header-1-container flex flex-align-center">
+                    <a href=""><img src="https://www.freshmenu.com/images/fm-header-logo.svg" alt=""></a>
+                    <div id="choose-location" class ="loacation">Deliver to: <a onclick="openLocation()"><span>Koramangala, Bengal...</span></a><img src="images/down-arrow.svg"></div>
+                    <div class="links">
+                        <div class="link-to-cake"><a href="cakes.html">Looking for Cake Delivery?</a></div>
+                        <div class="link-to-app"><a onclick="openMobileLink()">Download app</a></div>
+                    </div>
+                </div>  
+            </div>
+        </header>
+        <div class="search-remove">
+            <header id="header2">
+                <div class="header-2">
+                    <div class="header-2-container flex flex-align-center">
+                        <div class="header-2-links">
+                            <ul  class="flex flex-space-between flex-align-center">
+                                <li><a onclick="openSearch()"><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
+                                <li><a href="">Offers</a></li>
+                                <li><a href=""><img src="images/help-center.svg"></a></li>
+                                <li><a href=""><img src="images/log-in.svg"></a></li>
+                                <li id="Iconcart"><a onclick="showCart()"><img src="images/cart.svg"></a><div class="cartno" style="display:none;">1</div></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>  
-        </div>
-        <div class="header-2">
-            <div class="header-2-container flex flex-align-center">
-                <div class="header-2-links">
-                    <ul  class="flex flex-space-between flex-align-center">
-                        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>Search</a></li>
-                        <li><a href="">Offers</a></li>
-                        <li><a href=""><img src="images/help-center.svg"></a></li>
-                        <li><a href=""><img src="images/log-in.svg"></a></li>
-                        <li><a href=""><img src="images/cart.svg"></a></li>
-                    </ul>
+            </header>
+            <!--End of Header Section-->
+
+            <!--Banner Section-->
+            <div class="banner">
+                <div class = "image-section flex">
+                    <div><img src="images/d8d0c86c-16f4-48dc-9088-240fe3687d40.jpg" alt=""></div>
+                    <div><img src="images/d2726350-80b5-4273-b87a-e00d9e8642df.png" alt=""></div>
+                    <div><img src="images/a8d84480-dc3b-42c2-80d3-d3c3f4f2740e.jpg" alt=""></div>
+                    <div><img src="images/3f2a21a9-0182-4e12-ad31-a06b10412714.jpg" alt=""></div>
+                </div>
+            </div>
+            <!--End of Banner Section-->
+
+            <!--Filter Bar-->
+            <div class="filter-bar">
+                <div class="filter-bar-container flex flex-space-between flex-align-center">
+                    <div class="categories">CATEGORIES</div>
+                    <div class="vef-filter-container flex flex-end flex-align-center" >
+                        <div class="veg-filter flex flex-space-between flex-align-center">
+                            <button id="veg-toogle-btn" class="veg-toogle">VEG</button>
+                            <div class="filter-icon"><i id="filterIcon" class="fa fa-filter" aria-hidden="true" style="color:black;font-size:19px"></i>FILTER</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Filter Bar-->
+
+            <!--Menu Section-->
+            <div class="food-section">
+                <div class="menu flex">
+                    <div class="left-menu-links">
+                        <ul>
+                            <li><a href="#appetizers">Appetizers</a></li>
+                            <li><a href="#wokstation">Wok Station</a></li>
+                            <li><a href="#continental">Continental</a></li>
+                            <li><a href="#indianthalis">Indian/Thalis</a></li>
+                            <li><a href="#snacks">Snacks</a></li>
+                            <li><a href="#fitnfab">Fit N Fab</a></li>
+                            <li><a href="#bigbiriyanico.">Big Biriyani Co.</a></li>
+                            <li><a href="">Dessert</a></li>
+                            <li><a href="">Beverage</a></li>
+                            <li><a href="">Large Plates</a></li>
+                            <li><a href="">Essentials</a></li>
+                            <li><a href="">FreshMeats</a></li>
+                        </ul>
+                    </div>
+
+                    <div id = "menu" class="right-menu-items flex flex-column">
+                        
+                        
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </header>
-    <!--End of Header Section-->
+        <!--End of Menu Section-->
 
-    <!--Banner Section-->
-    <div class="banner">
-        <div class = "image-section flex">
-            <div><img src="images/d8d0c86c-16f4-48dc-9088-240fe3687d40.jpg" alt=""></div>
-            <div><img src="images/d2726350-80b5-4273-b87a-e00d9e8642df.png" alt=""></div>
-            <div><img src="images/a8d84480-dc3b-42c2-80d3-d3c3f4f2740e.jpg" alt=""></div>
-            <div><img src="images/3f2a21a9-0182-4e12-ad31-a06b10412714.jpg" alt=""></div>
-        </div>
-    </div>
-    <!--End of Banner Section-->
-
-    <!--Filter Bar-->
-    <div class="filter-bar">
-        <div class="filter-bar-container flex flex-space-between flex-align-center">
-            <div class="categories">CATEGORIES</div>
-            <div class="vef-filter-container flex flex-end flex-align-center" >
-                <div class="veg-filter flex flex-space-between flex-align-center">
-                    <div class="veg-toogle flex flex-align-center flex-justify-center" style="border:1px solid black;height:28px;width:44px;border-radius:5px">VEG</div>
-                    <div class="filter-icon"><i class="fa fa-filter" aria-hidden="true" style="color:black;font-size:19px"></i>FILTER</div>
-                </div>
+        <div id="search-menu" class="search-container" style="display: none;">
+            <div class="search-top">
+                <a class = "back-link" onclick="closeSearch()">Back to Menu</a>
             </div>
-        </div>
-    </div>
-    <!--End of Filter Bar-->
-
-    <!--Menu Section-->
-    <div class="food-section">
-        <div class="menu flex">
-            <div class="left-menu-links">
-                <ul>
-                    <li><a href="">Appetizers</a></li>
-                    <li><a href="">Wok Station</a></li>
-                    <li><a href="">Indian/Thalis</a></li>
-                    <li><a href="">Snacks</a></li>
-                    <li><a href="">Fit N Fab</a></li>
-                    <li><a href="">Family Combos</a></li>
-                    <li><a href="">Dessert</a></li>
-                    <li><a href="">Beverage</a></li>
-                    <li><a href="">Family Combos</a></li>
-                    <li><a href="">Large Plates</a></li>
-                    <li><a href="">Essentials</a></li>
-                    <li><a href="">FreshMeats</a></li>
-                </ul>
+            <div class="search-input">
+                <svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Search-Copy" fill="#9B9B9B"> <g id="Group-2" transform="translate(-3.300000, -2.700000)"> <g transform="translate(14.495689, 14.495689) rotate(-45.000000) translate(-14.495689, -14.495689) translate(5.995689, 2.495689)"> <path d="M8.9428101,16 C4.5245321,16 0.942810103,12.418278 0.942810103,8 C0.942810103,3.581722 4.5245321,0 8.9428101,0 C13.3610881,0 16.9428101,3.581722 16.9428101,8 C16.9428101,12.418278 13.3610881,16 8.9428101,16 Z M8.9428101,14.5 C12.532661,14.5 15.4428101,11.5898509 15.4428101,8 C15.4428101,4.41014913 12.532661,1.5 8.9428101,1.5 C5.35295923,1.5 2.4428101,4.41014913 2.4428101,8 C2.4428101,11.5898509 5.35295923,14.5 8.9428101,14.5 Z" id="Combined-Shape"></path><rect id="Rectangle-3" x="8.1928101" y="15" width="1.5" height="9"></rect></g></g></g></g></svg>
+                <input type="text" placeholder="Search" id="search-input-element">
+                <a onclick="returnToSearch()">Clear</a>
             </div>
-            <div class="right-menu-items flex flex-column">
-                
-                <div class="menu-1 flex flex-column">
-                    <div class="menu-heading">Appetizers</div>
-                    <div class="item-container flex flex-space-between flex-wrap">
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>ASIAN</div></div>
-                            <a href="item.html"><div class="item-img-container"><img src="images/Black-Pepper-panner.JPG" alt="item-img"></div></a>
-                            <div class="item-name">Black Pepper Panner</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>PAN-ASIAN</div></div>
-                            <div class="item-img-container"><img src="images/Honey-Chicken-Peppers.JPG" alt="item-img"></div>
-                            <div class="item-name">Honey Chicken Peppers</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/ghee-roast-chicken.JPG" alt="item-img"></div>
-                            <div class="item-name">Ghee-Roast Chicken</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;219</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/chilli-corn65.JPG" alt="item-img"></div>
-                            <div class="item-name">Chilli-Corn 65</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;179</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/Chicken-Tika.JPG" alt="item-img"></div>
-                            <div class="item-name">Chicken-Tikka</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;219</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>PAN-ASIAN</div></div>
-                            <div class="item-img-container"><img src="images/ChilliPanner.jpg" alt="item-img"></div>
-                            <div class="item-name">Chilli Paneer</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="menu-1 flex flex-column">
-                    <div class="menu-heading">WOK STATION</div>
-                    <div class="item-container flex flex-wrap flex-space-between">
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>ASIAN</div></div>
-                            <div class="item-img-container"><img src="images/nasi-goreng.JPG" alt="item-img"></div>
-                            <div class="item-name">Nasi Goreng</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;239</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>725 CAL I LOW CALORIE</div></div>
-                            <div class="item-img-container"><img src="images/dan-dan.jpg" alt="item-img"></div>
-                            <div class="item-name">Dan-Dan Chicken Noodels</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;219</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>PAN-ASIAN</div></div>
-                            <div class="item-img-container"><img src="images/american-lo-mein.jpg" alt="item-img"></div>
-                            <div class="item-name">American Lo Mein</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>PAN-ASIAN</div></div>
-                            <div class="item-img-container"><img src="images/Teriyaki.jpg" alt="item-img"></div>
-                            <div class="item-name">Teriyaki Chicken Hot Pot</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;249</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-1 flex flex-column">
-                    <div class="menu-heading">INDIAN / THALI</div>
-                    <div class="item-container flex flex-wrap flex-space-between">
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>NORTH INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/homestyle.JPG" alt="item-img"></div>
-                            <div class="item-name">Homestyle Thali 'n' Cake slice</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/non-veg.svg" alt="veg-icon"><div>INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/butter-chicken.jpg" alt="item-img"></div>
-                            <div class="item-name">Butter Chicken with Jeera Rice</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;199</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>NORTH INDIAN</div></div>
-                            <div class="item-img-container"><img src="images/butter-thali.JPG" alt="item-img"></div>
-                            <div class="item-name">Butter-Chicken Thali</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;209</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="menu-1 flex flex-column">
-                    <div class="menu-heading">SNACKS</div>
-                    <div class="item-container flex flex-wrap flex-space-between">
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>WORLD CUISNE</div></div>
-                            <div class="item-img-container"><img src="images/alphonso.jpg" alt="item-img"></div>
-                            <div class="item-name">Alphonso Mango Yogurt(90 Gms)</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;43</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>UNIVERSAL</div></div>
-                            <div class="item-img-container"><img src="images/fresh-fruit.JPG" alt="item-img"></div>
-                            <div class="item-name">Fresh Fruit Bowl</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;119</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                        <div class="item">
-                            <div class="category flex flex-align-center"><img src="images/veg.svg" alt="veg-icon"><div>FUSION</div></div>
-                            <div class="item-img-container"><img src="images/blue-berry.jpg" alt="item-img"></div>
-                            <div class="item-name">Blueberry Spread(250 Gms)</div>
-                            <div class="item-price-button flex flex-space-between flex-align-center">
-                                <div class="item-price">&#x20B9;333</div>
-                                <div><button class="add-button">ADD<span>+</span></button></div>
-                            </div>
-                            <div class="customisable">Customisable</div>
-                        </div>
-                    </div>
+            <div id = "hide-search-categorie">
+                <div class="recent-search">
+                    <h3 class="recent-search-heading">RECENT SEARCH</h3>
                 </div>
                 
-            </div>
-        </div>
-    </div>
-    <!--End of Menu Section-->
+                <div class="recent-search-items">
+                    
+                </div>
+            
+                <div class="recent-search">
+                    <h3 class="recent-search-heading">TOP CATEGORIES</h3>
+                </div>
 
-    <!--Footer Section-->
-    <footer>
-        <div class="footer-1 flex">
-            <div class="company">
-                <h5>COMPANY</h5>
-                <ul>
-                    <li>FAQ</li>
-                    <li>About</li>
-                    <li>Careers</li>
-                    <li>Blog</li>
-                </ul>
-                <div class="terms-privacy">
-                    <a href="">Terms</a>
-                    <a href="">Privacy</a>
+                <div id="search-item-category">
+                    
                 </div>
+
             </div>
-            <div>
-                <h5>HELP & CONTACT</h5>
-                <ul>
-                    <li>Help Center</li>
-                    <li>Email</li>
-                    <li>080-6824-5911</li>
-                </ul>
-            </div>
-            <div>
-                <h5>MORE FROM US</h5>
-                <ul>
-                    <li>Bulk/Party Order</li>
-                    <li>Cake Order</li>
-                    <li>FreshClub</li>
-                    <li>Offers</li>
-                </ul>
-            </div>
-            <div class="divider"></div>
-            <div class="subscribe">
-                <h5>SUBSCRIBE TO OUR DROOLWORTHY NEWSLETTER</h5>
-                <form class="submit-form" class="flex" action="">
-                    <div>
-                        <input type="text" placeholder="Enter your email">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </form>
-                <div class="social flex flex-align-center">
-                    <a href=""><img src="images/google-play.jpg" style="width:auto;height:40px" alt="google-play"></a>
-                    <a href=""><img src="images/btn-app-store-normal-2.svg" style="width:auto;height:40px" alt="app-store"></a>
-                    <a href=""><img src="images/facebook.svg" alt="svg"></a>
-                    <a href=""><img src="images/twitter.svg" alt="svg"></a>
-                    <a href=""><img src="images/instagram.svg" alt="svg"></a>
+            <div id="show-search-result" style="display: none;">
+                <div class="recent-search">
+                    <h3 class="recent-search-heading">Search Result</h3>
+                </div>
+                <div id="search-item-container">
+
                 </div>
             </div>
         </div>
-    </footer>
-    <div class="nav-section">
-        <div class="nav-section-container flex flex-align-center">
-            <div>
-                <h5>CATEGORIES</h5>
-                <ul>
-                    <li>Mains</li>
-                    <li>Pizzas</li>
-                    <li>Salads</li>
-                    <li>Desserts</li>
-                    <li>Quickbites</li>
-                </ul>
-            </div>
-            <div>
-                <h5>CUISNES</h5>
+        
+        <!--Footer Section-->
+        <footer>
+            <div class="footer-1 flex">
+                <div class="company">
+                    <h5>COMPANY</h5>
                     <ul>
-                        <li>Indian</li>
-                        <li>Chinese</li>
-                        <li>Italian</li>
-                        <li>American</li>
-                        <li style="visibility: hidden;">1</li>
+                        <li>FAQ</li>
+                        <li>About</li>
+                        <li>Careers</li>
+                        <li>Blog</li>
                     </ul>
-            </div>
-            <div>
-                <h5 style="visibility: hidden;">1</h5>
+                    <div class="terms-privacy">
+                        <a href="">Terms</a>
+                        <a href="">Privacy</a>
+                    </div>
+                </div>
+                <div>
+                    <h5>HELP & CONTACT</h5>
                     <ul>
-                        <li>Mexican</li>
-                        <li>Thai</li>
-                        <li>Continental</li>
-                        <li>Mediterranean</li>
-                        <li style="visibility: hidden;">1</li>
+                        <li>Help Center</li>
+                        <li>Email</li>
+                        <li>080-6824-5911</li>
                     </ul>
+                </div>
+                <div>
+                    <h5>MORE FROM US</h5>
+                    <ul>
+                        <li>Bulk/Party Order</li>
+                        <li>Cake Order</li>
+                        <li>FreshClub</li>
+                        <li>Offers</li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="subscribe">
+                    <h5>SUBSCRIBE TO OUR DROOLWORTHY NEWSLETTER</h5>
+                    <form class="submit-form" class="flex" action="">
+                        <div>
+                            <input type="text" placeholder="Enter your email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <div class="social flex flex-align-center">
+                        <a href=""><img src="images/google-play.jpg" style="width:auto;height:40px" alt="google-play"></a>
+                        <a href=""><img src="images/btn-app-store-normal-2.svg" style="width:auto;height:40px" alt="app-store"></a>
+                        <a href=""><img src="images/facebook.svg" alt="svg"></a>
+                        <a href=""><img src="images/twitter.svg" alt="svg"></a>
+                        <a href=""><img src="images/instagram.svg" alt="svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="nav-section">
+            <div class="nav-section-container flex flex-align-center">
+                <div>
+                    <h5>CATEGORIES</h5>
+                    <ul>
+                        <li>Mains</li>
+                        <li>Pizzas</li>
+                        <li>Salads</li>
+                        <li>Desserts</li>
+                        <li>Quickbites</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>CUISNES</h5>
+                        <ul>
+                            <li>Indian</li>
+                            <li>Chinese</li>
+                            <li>Italian</li>
+                            <li>American</li>
+                            <li style="visibility: hidden;">1</li>
+                        </ul>
+                </div>
+                <div>
+                    <h5 style="visibility: hidden;">1</h5>
+                        <ul>
+                            <li>Mexican</li>
+                            <li>Thai</li>
+                            <li>Continental</li>
+                            <li>Mediterranean</li>
+                            <li style="visibility: hidden;">1</li>
+                        </ul>
+                </div>
             </div>
         </div>
     </div>    
     <!--End of footer Section-->
+
+    <!--Location Box-->
+    <div id="location-box" class="location-container" style="display: none;">
+        <div class="location-dropdown-container">
+            <div class="location-header">
+                <h3>Enter your delivery loacation</h3>
+                <span class="close" onclick="closeLocation()">×</span>
+            </div>
+            <div class="location-body">
+                <div class="location-items">
+                    <div>Bengaluru</div>
+                    <div>Mumbai</div>
+                    <div>New Delhi</div>
+                    <div>Gurgon</div>
+                </div>
+                <div class = "search-input-container" style="margin-bottom: 25px;position: relative;">
+                    <input id="search-input" type="text" style="width: 100%;" placeholder="Enter min 5 characters to search your location">
+                    <div class="search-icon">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="Locate">| <span>Locate Me</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Location Box-->
+
+    <!--Mobile App Link-->
+    <div id="app-link" class="mobile-contact" style="display: none;">
+        <div onclick="closeMobileLink()">
+            <img class="toggle-modal-download-app" height="14" width="14" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTEycHgiIHZlcnNpb249IjEuMSIgaGVpZ2h0PSI1MTJweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCI+CiAgPGc+CiAgICA8cGF0aCBmaWxsPSIjODU4YTg1IiBkPSJNMjguOTQxLDMxLjc4NkwwLjYxMyw2MC4xMTRjLTAuNzg3LDAuNzg3LTAuNzg3LDIuMDYyLDAsMi44NDljMC4zOTMsMC4zOTQsMC45MDksMC41OSwxLjQyNCwwLjU5ICAgYzAuNTE2LDAsMS4wMzEtMC4xOTYsMS40MjQtMC41OWwyOC41NDEtMjguNTQxbDI4LjU0MSwyOC41NDFjMC4zOTQsMC4zOTQsMC45MDksMC41OSwxLjQyNCwwLjU5YzAuNTE1LDAsMS4wMzEtMC4xOTYsMS40MjQtMC41OSAgIGMwLjc4Ny0wLjc4NywwLjc4Ny0yLjA2MiwwLTIuODQ5TDM1LjA2NCwzMS43ODZMNjMuNDEsMy40MzhjMC43ODctMC43ODcsMC43ODctMi4wNjIsMC0yLjg0OWMtMC43ODctMC43ODYtMi4wNjItMC43ODYtMi44NDgsMCAgIEwzMi4wMDMsMjkuMTVMMy40NDEsMC41OWMtMC43ODctMC43ODYtMi4wNjEtMC43ODYtMi44NDgsMGMtMC43ODcsMC43ODctMC43ODcsMi4wNjIsMCwyLjg0OUwyOC45NDEsMzEuNzg2eiIvPgogIDwvZz4KPC9zdmc+Cg==">
+        </div>
+        <h2>Go Mobile</h2>
+        <p>We'll send you a link, open it on your phone to download the app.</p>
+        <div class="app-link">
+            <form action="">
+                <input type="text" name="" id="">
+                <button>TEXT APP LINK</button>
+            </form>
+            <div class="code">91</div>
+        </div>
+    </div>
+    <!--End of Mobile App Link-->
+
+    <div class="cart" style="display: none;">
+        <div class="cartcontainer">
+            <div class="flex flex-space-between">
+                <div>Your cart</div>
+                <a onclick="closeCart()">X</a>
+            </div>
+            <div id="total-items">0 items</div>
+
+            <div class="cart-items">
+                
+                
+            </div>
+        </div>
+        <div class="place-order">PLACE ORDER . &#x20B9;<span class="total-amount">0</span></div>
+        <div style="margin-top: 20px;" class="safety">Safety Assured meals and contactless delivery</div>
+    </div>
+    
+
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>

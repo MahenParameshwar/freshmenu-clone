@@ -108,6 +108,7 @@ button:hover{
     padding: right 2%;
     padding-left: 2%;
     max-width: 1185px;
+    display: flex;
 }
 
 .product-left-section{
@@ -195,7 +196,8 @@ img[alt="veg-icon"],img[alt="non-veg-icon"]{
     color:white;
     font-size:16px;
     font-weight: 600;
-    border-style:none
+    border: none;
+    outline:none;
 }
 .customisable{
     width: 110px;
